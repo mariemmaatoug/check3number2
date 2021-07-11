@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body{
+    margin: 0px;
+      }
+      .container{
+        width: 100vw;
+        height: 100vw; 
+        font-family: "Qicksand",sans-serif;
+        font-weight: bold; 
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);/*houma 3 columns donc repeat 3 fois 1 fr*/
+        /*1 fr is a fraction that could shrink when making web smaller*/
+        grid-template-rows: repeat(4 , 1fr); /*50px , 1fr , 1fr , 100px ;*/  /*ena bch na3ml 4 div donc kol , pour partie*/
+        /*px matchrinkich */
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+    .container div{
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .header{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .contentlarge{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .contentpetit1{
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .contentpetit2{
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .footer{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start:4;
+      grid-row-end: 5;
+      
+    }
+ 
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="contentlarge">content</div>
+      <div class="contentpetit1">content1</div>
+      <div class="contentpetit2">content2</div>
+      <div class="footer">footer</div>
+    </div>
+</body>
+</html>
